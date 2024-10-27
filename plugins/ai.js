@@ -29,7 +29,7 @@ System({
 }, async (message, match, m) => {
     match = match || m.reply_message.text;
     if(match && m.quoted) match = match + m.reply_message.text;
-    if(!match) return m.reply("_*need query !!*_\n_*eg: .thinkany who is iron man*_");
+    if(!match) return m.reply("_*need query !!*_\n_*eg: .thinkany who is ˹ᴍʏꜱᴛɪᴄ ꭙ ꜱɪʟᴇɴᴄᴇ˼*_");
     const { result } = await interactWithAi("thinkany", match);
     await m.send(result, { contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363197401188542@newsletter', newsletterName: 'ᴛʜɪɴᴋᴀɴʏ ᴀɪ' }}});
 });
@@ -42,7 +42,7 @@ System({
 }, async (message, match, m) => {
     match = match || m.reply_message.text;
     if(match && m.quoted) match = match + m.reply_message.text;
-    if(!match) return m.reply("_*need query !!*_\n_*eg: .aoyo who is iron man*_");
+    if(!match) return m.reply("_*need query !!*_\n_*eg: .aoyo who is ˹ᴍʏꜱᴛɪᴄ ꭙ ꜱɪʟᴇɴᴄᴇ˼*_");
     const { result } = await interactWithAi("aoyo", match);
     await m.send(result, { contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363197401188542@newsletter', newsletterName: 'ᴀᴏʏᴏ ᴀɪ' }}});
 });
@@ -70,7 +70,7 @@ System({
 }, async (message, match, m) => {
     match = match || m.reply_message.text;
     if(match && m.quoted) match = match + m.reply_message.text;
-    if(!match) return m.reply("_*need query !!*_\n_*eg: .dalle a girl in full moon*_");
+    if(!match) return m.reply("_*need query !!*_\n_*eg: .dalle a girl in full moon.*_");
     await m.reply("*please wait generating*");
     const img = await interactWithAi("dalle", match);
     await m.sendFromUrl(img, { contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363197401188542@newsletter', newsletterName: 'ᴅᴀʟʟᴇ ᴀɪ' }}});
@@ -98,7 +98,7 @@ System({
 }, async (message, match, m) => {
     match = match || m.reply_message.text;
     if(match && m.quoted) match = match + m.reply_message.text;
-    if(!match) return m.reply("_*need query !!*_\n_*eg: .chatgpt who is iron man*_");
+    if(!match) return m.reply("_*need query !!*_\n_*eg: .chatgpt who is ˹ᴍʏꜱᴛɪᴄ ꭙ ꜱɪʟᴇɴᴄᴇ˼*_");
     const { response } = await interactWithAi("gpt", match);
     await m.send(response, { contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363197401188542@newsletter', newsletterName: 'ᴄʜᴀᴛɢᴩᴛ 4' }}});
 });
