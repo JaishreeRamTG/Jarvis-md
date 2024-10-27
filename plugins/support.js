@@ -18,7 +18,7 @@ System({
     desc: "jarvis-md support",
     type: "support"
 }, async (message) => {
-    const name = '˹ᴛᴏxɪᴄ ꭙ ᴅᴇᴀᴛʜ˼ 🎓', title = "˹ᴛᴏxɪᴄ ꭙ ꜱᴜᴩᴩᴏʀᴛ 🪄˼", number = '919266765356', body = "ɪʀᴏɴ ᴍᴀɴ";
+    const name = '˹ᴛᴏxɪᴄ ꭙ ᴅᴇᴀᴛʜ˼ 🎓', title = "˹ᴛᴏxɪᴄ ꭙ ꜱᴜᴩᴩᴏʀᴛ 🪄˼", number = '919266765356', body = "ᴛᴏxɪᴄ";
     const image = "https://i.imgur.com/sH0kK7E.jpeg", sourceUrl = 'https://chat.whatsapp.com/LVaZ6VXZJNP54d4fWUv2cZ';
     const logo = await getBuffer(image);
     const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nORG: powered by Jarvis-md;\nTEL;type=CELL;type=VOICE;waid=${number}:${number}\nEND:VCARD`;
